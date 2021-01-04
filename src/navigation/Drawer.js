@@ -44,7 +44,7 @@ export default () => {
       drawerType="slide"
       overlayColor="transparent"
       contentOptions={{backgroundColor: 'red'}}
-      drawerStyle={{width: '45%', backgroundColor: '#1F1B33'}}
+      drawerStyle={{width: '50%', backgroundColor: '#1F1B33'}}
       contentContainerStyle={{flex: 1}}
       sceneContainerStyle={{
         backgroundColor: '#1F1B33',
