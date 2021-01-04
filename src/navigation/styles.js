@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   viewDrawer: {
-    marginTop: 120,
+    marginTop: 100,
   },
   viewTitle: {
     alignItems: 'center',
-    marginBottom: 30,
+    marginBottom: 60,
   },
   title: {
     color: '#fff',
@@ -50,10 +50,9 @@ const styles = StyleSheet.create({
   },
   viewRow: {
     borderBottomColor: '#fff',
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.4,
     marginVertical: 30,
     marginLeft: 30,
-    marginRight: 20,
   },
   viewSignOut: {
     marginLeft: 30,
@@ -81,7 +80,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: 60,
   },
   screenOptionsImage: {
     height: 30,
