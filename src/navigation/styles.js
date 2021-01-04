@@ -66,6 +66,35 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     width: 100,
   },
+  drawerStyle: {
+    width: '50%',
+    backgroundColor: '#1F1B33',
+  },
+  sceneContainerStyle: {
+    backgroundColor: '#1F1B33',
+  },
+  animatedView: {
+    flex: 1,
+    overflow: 'hidden',
+  },
+  screenOptionsView: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 40,
+  },
+  screenOptionsImage: {
+    height: 30,
+    width: 30,
+    margin: 30,
+  },
+  screenOptionsText: {
+    color: '#9F9FA0',
+    fontFamily: 'OpenSans',
+    fontSize: 24,
+    fontWeight: '400',
+    letterSpacing: 5,
+  },
 });
 
 export default styles;

@@ -3,6 +3,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Navigator from './Navigator';
 import DrawerContent from './DrawerContent';
 import Animated from 'react-native-reanimated';
+import styles from './styles';
 
 const Drawer = createDrawerNavigator();
 
@@ -44,11 +45,9 @@ export default () => {
       drawerType="slide"
       overlayColor="transparent"
       contentOptions={{backgroundColor: 'red'}}
-      drawerStyle={{width: '50%', backgroundColor: '#1F1B33'}}
-      contentContainerStyle={{flex: 1}}
-      sceneContainerStyle={{
-        backgroundColor: '#1F1B33',
-      }}
+      drawerStyle={styles.drawerStyle}
+      contentContainerStyle={styles.safeAreaApp}
+      sceneContainerStyle={styles.sceneContainerStyle}
       drawerContentOptions={{
         activeTintColor: 'red',
         activeBackgroundColor: 'red',

@@ -6,18 +6,13 @@ import styles from './styles';
 export default (props) => {
   const getCurrentRouteName = () => {
     let _index = props.state.index;
-    console.warn('index: ', _index);
     let _routeName = props.state.routeNames;
-    console.warn('routename: ', _routeName);
     return _routeName[_index];
   };
-  console.warn(getCurrentRouteName());
   return (
     <DrawerContentScrollView
       {...props}
-      contentContainerStyle={{
-        flex: 1,
-      }}>
+      contentContainerStyle={styles.safeAreaApp}>
       <View style={styles.viewDrawer}>
         <View style={styles.viewTitle}>
           <Text style={styles.title}>Viktor</Text>
