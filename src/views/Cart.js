@@ -1,5 +1,6 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {Text} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Cart = () => {
   return (
@@ -8,7 +9,7 @@ const Cart = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#41D5FB',
+        backgroundColor: '#3B82C4',
       }}>
       <Text>Cart</Text>
     </SafeAreaView>
