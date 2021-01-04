@@ -7,7 +7,7 @@ const Orders = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
-        <Text style={styles.containerText}>Favorites</Text>
+        <Text style={styles.containerText}>Orders</Text>
       </View>
     </SafeAreaView>
   );
