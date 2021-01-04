@@ -31,7 +31,8 @@ export default ({navigation, style}) => {
                 <Text
                   style={{
                     color: '#9F9FA0',
-                    fontWeight: '700',
+                    fontFamily: 'OpenSans',
+                    fontSize: 36,
                   }}>
                   START
                 </Text>

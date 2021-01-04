@@ -21,17 +21,21 @@ export default () => {
 
   const translateX = Animated.interpolate(progress, {
     inputRange: [0, 1],
-    outputRange: ['0px', '55px'],
+    outputRange: ['0px', '60px'],
   });
 
   const translateY = Animated.interpolate(progress, {
     inputRange: [0, 1],
-    outputRange: ['0px', '20px'],
+    outputRange: ['0px', '50px'],
   });
 
   const screenStyles = {
     borderRadius,
     transform: [{rotate}, {translateX}, {translateY}],
+  };
+
+  const updateProgress = (props) => {
+    setProgress(props.progress);
   };
 
   return (
@@ -41,8 +45,11 @@ export default () => {
       overlayColor="transparent"
       drawerStyle={{width: '50%', backgroundColor: '#1F1B33'}}
       contentContainerStyle={{flex: 1}}
+      sceneContainerStyle={{
+        backgroundColor: '#1F1B33',
+      }}
       drawerContent={(props) => {
-        setProgress(props.progress);
+        updateProgress(props);
         return <DrawerContent {...props} />;
       }}>
       <Drawer.Screen name="Navigator">
