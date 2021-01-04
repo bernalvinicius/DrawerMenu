@@ -16,17 +16,17 @@ export default () => {
 
   const rotate = Animated.interpolate(progress, {
     inputRange: [0, 1],
-    outputRange: ['0deg', '-10deg'],
+    outputRange: ['0deg', '-8deg'],
   });
 
   const translateX = Animated.interpolate(progress, {
     inputRange: [0, 1],
-    outputRange: ['0px', '55px'],
+    outputRange: ['0px', '70px'],
   });
 
   const translateY = Animated.interpolate(progress, {
     inputRange: [0, 1],
-    outputRange: ['0px', '50px'],
+    outputRange: ['0px', '20px'],
   });
 
   const screenStyles = {
