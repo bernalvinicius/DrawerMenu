@@ -37,10 +37,10 @@ export default ({navigation}) => {
           </TouchableOpacity>
         ),
       }}>
+      <Stack.Screen name="Start" component={Start} />
       <Stack.Screen name="Cart" component={Cart} />
       <Stack.Screen name="Favorites" component={Favorites} />
       <Stack.Screen name="Orders" component={Orders} />
-      <Stack.Screen name="Start" component={Start} />
     </Stack.Navigator>
   );
 };

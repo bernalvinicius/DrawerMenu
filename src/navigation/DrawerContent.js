@@ -8,22 +8,22 @@ export default (props) => {
       <View>
         <DrawerItem
           label="Start"
-          labelStyle={{color: '#000'}}
+          labelStyle={{color: '#fff'}}
           onPress={() => props.navigation.navigate('Start')}
         />
         <DrawerItem
           label="Your Cart"
-          labelStyle={{color: '#000'}}
+          labelStyle={{color: '#fff'}}
           onPress={() => props.navigation.navigate('Cart')}
         />
         <DrawerItem
           label="Favorites"
-          labelStyle={{color: '#000'}}
+          labelStyle={{color: '#fff'}}
           onPress={() => props.navigation.navigate('Favorites')}
         />
         <DrawerItem
           label="Your Orders"
-          labelStyle={{color: '#000'}}
+          labelStyle={{color: '#fff'}}
           onPress={() => props.navigation.navigate('Orders')}
         />
       </View>
