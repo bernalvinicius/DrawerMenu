@@ -1,6 +1,13 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  safeAreaApp: {
+    flex: 1,
+  },
+  safeAreaProvider: {
+    borderTopLeftRadius: 48,
+    overflow: 'hidden',
+  },
   viewDrawer: {
     marginTop: 120,
   },
