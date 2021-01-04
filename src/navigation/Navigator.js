@@ -22,7 +22,7 @@ export default ({navigation, style}) => {
                   flexDirection: 'row',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  marginTop: 60,
+                  marginTop: 20,
                 }}>
                 <Image
                   source={require('../assets/images/menu.png')}
@@ -32,7 +32,7 @@ export default ({navigation, style}) => {
                   style={{
                     color: '#9F9FA0',
                     fontFamily: 'OpenSans',
-                    fontSize: 36,
+                    fontSize: 30,
                   }}>
                   START
                 </Text>

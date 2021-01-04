@@ -1,11 +1,32 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, Text} from 'react-native';
 import {DrawerItem, DrawerContentScrollView} from '@react-navigation/drawer';
 
 export default (props) => {
   return (
-    <DrawerContentScrollView {...props}>
-      <View>
+    <DrawerContentScrollView
+      {...props}
+      drawerContentOptions={{
+        activeTintColor: 'red',
+        activeBackgroundColor: 'red',
+      }}
+      contentContainerStyle={{
+        flex: 1,
+        justifyContent: 'flex-start',
+      }}>
+      <View style={{marginTop: 40}}>
+        <View>
+          <Text
+            style={{
+              color: '#fff',
+              fontFamily: 'OpenSans',
+              fontWeight: 'bold',
+              lineHeight: 38,
+              fontSize: 28,
+            }}>
+            Viktor
+          </Text>
+        </View>
         <DrawerItem
           label="Start"
           labelStyle={{color: '#fff'}}
@@ -25,6 +46,19 @@ export default (props) => {
           label="Your Orders"
           labelStyle={{color: '#fff'}}
           onPress={() => props.navigation.navigate('Orders')}
+        />
+        <View
+          style={{
+            borderBottomColor: '#fff',
+            borderBottomWidth: 1,
+            width: '50%',
+            marginLeft: 50,
+          }}
+        />
+        <DrawerItem
+          label="Sign Out"
+          labelStyle={{color: '#fff'}}
+          onPress={() => alert('Are you sure to logout?')}
         />
       </View>
     </DrawerContentScrollView>

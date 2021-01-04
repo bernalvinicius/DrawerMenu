@@ -21,7 +21,7 @@ export default () => {
 
   const translateX = Animated.interpolate(progress, {
     inputRange: [0, 1],
-    outputRange: ['0px', '60px'],
+    outputRange: ['0px', '55px'],
   });
 
   const translateY = Animated.interpolate(progress, {
@@ -43,10 +43,15 @@ export default () => {
       initialRouteName="Start"
       drawerType="slide"
       overlayColor="transparent"
-      drawerStyle={{width: '50%', backgroundColor: '#1F1B33'}}
+      contentOptions={{backgroundColor: 'red'}}
+      drawerStyle={{width: '45%', backgroundColor: '#1F1B33'}}
       contentContainerStyle={{flex: 1}}
       sceneContainerStyle={{
         backgroundColor: '#1F1B33',
+      }}
+      drawerContentOptions={{
+        activeTintColor: 'red',
+        activeBackgroundColor: 'red',
       }}
       drawerContent={(props) => {
         updateProgress(props);
