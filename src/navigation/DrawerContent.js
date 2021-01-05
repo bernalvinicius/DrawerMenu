@@ -4,11 +4,6 @@ import {DrawerItem, DrawerContentScrollView} from '@react-navigation/drawer';
 import styles from './styles';
 
 export default (props) => {
-  const getCurrentRouteName = () => {
-    let _index = props.state.index;
-    let _routeName = props.state.routeNames;
-    return _routeName[_index];
-  };
   return (
     <DrawerContentScrollView
       {...props}
