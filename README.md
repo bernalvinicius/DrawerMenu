@@ -1,4 +1,4 @@
-# Drawer Menu - Profixy
+# Drawer Menu - Proxify
 
 
 ![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/DrawerMenu/master/src/assets/images/print.png)
@@ -9,7 +9,7 @@
 
 
 
-This project is part of the selection process for Front-End Developer sent by **Profixy**.
+This project is part of the selection process for Front-End Developer sent by **Proxify**.
 
 
 
